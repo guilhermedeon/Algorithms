@@ -8,6 +8,7 @@ public class BinarySearchImpl implements Search{
 	public int binarySearch(int[] array, int targetValue) {
 		int low = 0, result = -1;
 		int high = array.length - 1;
+		//optional
 		int iterations = 0;
 		
 		while(low <= high) {

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import search.binarySearch.BinarySearchImpl;
 import search.crystalSearch.CrystalSearchImpl;
 import search.linearSearch.LinearSearchImpl;
+import search.recursiveBinarySearch.RecursiveBinarySearchImpl;
 
 public class SearchExecSimple {
 	//class for executing and testing
@@ -25,9 +26,11 @@ public class SearchExecSimple {
 		Search linearSearch = new LinearSearchImpl();
 		Search crystalSearch = new CrystalSearchImpl();
 		Search binarySearch = new BinarySearchImpl();
+		Search recBinarySearch = new RecursiveBinarySearchImpl();
 		searchAlgos.add(linearSearch);
 		searchAlgos.add(binarySearch);
 		searchAlgos.add(crystalSearch);
+		searchAlgos.add(recBinarySearch);
 	
 		
 		for(Search s : searchAlgos) {

@@ -3,6 +3,7 @@ package sort;
 import java.util.ArrayList;
 
 import sort.bubbleSort.BubbleSortImpl;
+import sort.mergeSort.MergeSortImpl;
 import sort.selectionSort.SelectionSortImpl;
 
 public class SortExec {
@@ -16,8 +17,10 @@ public class SortExec {
 		ArrayList<Sort> sortAlgos = new ArrayList<>();
 		Sort bubbleSort = new BubbleSortImpl();
 		Sort selectionSort = new SelectionSortImpl();
+		Sort mergeSort = new MergeSortImpl();
 		sortAlgos.add(bubbleSort);
 		sortAlgos.add(selectionSort);
+		sortAlgos.add(mergeSort);
 		
 		////////////////////////////////////
 		int[] myArray = new int[size];
@@ -49,6 +52,7 @@ public class SortExec {
 		System.out.println("\n\nOriginal Array PT2:");
 		System.out.println(myList2);
 		
+		
 		for (Sort s : sortAlgos) {
 			long initialTime = System.nanoTime();
 			int[] sorted2 = s.sort(myArray2);
@@ -57,6 +61,7 @@ public class SortExec {
 			print(sorted2, s.toString());
 			System.out.println("Time taken: " + timeTaken + "ns");
 		}
+		
 	}
 
 	public static void print(int[] array, String string) {

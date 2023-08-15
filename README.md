@@ -6,6 +6,6 @@ Algoritmos em Java
 - [X] Recursive Binary Search - Busca binária recursiva
 - [X] Bubble Sort
 - [ ] Merge Sort
-- [ ] Selection Sort
+- [X] Selection Sort
 - [ ] Insertion Sort
 - [ ] Path Finding

@@ -3,6 +3,7 @@ package sort;
 import java.util.ArrayList;
 
 import sort.bubbleSort.BubbleSortImpl;
+import sort.selectionSort.SelectionSortImpl;
 
 public class SortExec {
 	//class for executing and testing
@@ -14,7 +15,9 @@ public class SortExec {
 
 		ArrayList<Sort> sortAlgos = new ArrayList<>();
 		Sort bubbleSort = new BubbleSortImpl();
+		Sort selectionSort = new SelectionSortImpl();
 		sortAlgos.add(bubbleSort);
+		sortAlgos.add(selectionSort);
 		
 		////////////////////////////////////
 		int[] myArray = new int[size];
